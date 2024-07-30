@@ -1,0 +1,4 @@
+[
+    {"command": "latexyz_arrow_complete"},
+    {"command": "insert_snippet", "args": {"contents": " "}},
+]

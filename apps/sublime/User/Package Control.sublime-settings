@@ -1,0 +1,36 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"A File Icon",
+		"Agila Theme",
+		"Anaconda",
+		"AutoFileName",
+		"Base16 Color Schemes",
+		"BracketHighlighter",
+		"CMakeEditor",
+		"Color Highlight",
+		"FileIcons",
+		"Google Spell Check",
+		"Guna",
+		"Hide Menu",
+		"LaTeXTools",
+		"LaTeXYZ",
+		"MarkdownEditing",
+		"MarkdownPreview",
+		"Material Theme",
+		"Open In Browser",
+		"Package Control",
+		"PackageDev",
+		"Pandoc",
+		"PowerShell",
+		"rainbow_csv",
+		"RainbowBrackets",
+		"SideBarEnhancements",
+		"Terminus",
+		"WordingStatus",
+	],
+}

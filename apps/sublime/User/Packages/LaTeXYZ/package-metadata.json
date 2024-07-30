@@ -1,0 +1,1 @@
+{"description": "Better LaTeX experience with Sublime Text", "dependencies": [], "sublime_text": ">=4000", "platforms": ["*"], "url": "https://github.com/randy3k/LaTeXYZ", "version": "0.1.17"}

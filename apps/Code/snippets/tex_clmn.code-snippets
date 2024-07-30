@@ -1,0 +1,11 @@
+{
+	"tex_clmn": {
+		"prefix": "m",
+		"body": [
+			"\\left[\\begin{array}{l}",
+			"${1:1} \\\\\\ ${2:0}",
+			"\\end{array}\\right]"
+		],
+		"description": "tex_clmn"
+	}
+}

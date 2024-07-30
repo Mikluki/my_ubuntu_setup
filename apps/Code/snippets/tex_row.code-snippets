@@ -1,0 +1,10 @@
+{
+"tex_row": {
+	"prefix": "mm",
+	"body": [
+		"\\left[\\begin{array}{ll}",
+		"${1:1} & ${2:0}",
+		"\\end{array}\\right]"
+	],
+	"description": "tex_row"
+}}

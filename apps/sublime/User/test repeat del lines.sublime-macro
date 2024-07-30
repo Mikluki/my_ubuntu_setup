@@ -1,0 +1,22 @@
+[
+	{
+		"args":
+		{
+			"extend": false,
+			"to": "eol"
+		},
+		"command": "move_to"
+	},
+	{
+		"args":
+		{
+			"extend": true,
+			"to": "bof"
+		},
+		"command": "move_to"
+	},
+	{
+		"args": null,
+		"command": "right_delete"
+	}
+]

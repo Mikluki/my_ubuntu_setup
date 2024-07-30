@@ -1,0 +1,20 @@
+visualizer.fps=20
+audio.sources=pulse
+visualizer.scaling.multiplier=10
+visualizer.spectrum.bar.width=1
+visualizer.spectrum.bar.spacing=1
+
+##Options are monstercat, sgs, none.
+visualizer.spectrum.smoothing.mode=sgs
+
+##always odd default is 5
+visualizer.sgs.smoothing.points=3
+
+
+##Options are fill,top,none.
+visualizer.spectrum.falloff.mode=fill
+
+##best 0.9+ and small changes in this value can have a large effect. Defaults to 0.95
+visualizer.spectrum.falloff.weight=0.96
+
+colors.scheme=plasma,plasma_r,blue2orange,pink2violet,peachy,blue2pink2orange

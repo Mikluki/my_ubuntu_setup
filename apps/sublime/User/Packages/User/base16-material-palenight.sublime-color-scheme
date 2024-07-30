@@ -1,0 +1,15 @@
+// Documentation at https://www.sublimetext.com/docs/color_schemes.html
+{
+    "variables":
+    {
+    },
+    "globals":
+    {
+        "highlight": "#FADD8B",
+        "selection_border_width": "1",
+    },
+    "rules":
+    [
+
+    ]
+}

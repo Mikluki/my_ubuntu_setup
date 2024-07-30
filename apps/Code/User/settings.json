@@ -1,0 +1,331 @@
+{
+    "files.insertFinalNewline": true,
+    "editor.tabSize": 4,
+    "files.trimTrailingWhitespace": true,
+    "editor.formatOnPaste": true,
+    "editor.multiCursorModifier": "ctrlCmd",
+    "files.autoSave": "afterDelay",
+    "debug.console.fontSize": 16,
+    "terminal.integrated.fontSize": 15,
+    "explorer.confirmDelete": false,
+    "workbench.iconTheme": "material-icon-theme",
+    "jupyter.askForKernelRestart": false,
+    "explorer.confirmDragAndDrop": false,
+    "editor.renderWhitespace": "none",
+    "window.menuBarVisibility": "toggle",
+    "editor.detectIndentation": false,
+    "notebook.lineNumbers": "on",
+    "notebook.globalToolbar": false,
+    "editor.fastScrollSensitivity": 10,
+    "editor.minimap.enabled": false,
+    "editor.minimap.showSlider": "always",
+    "editor.minimap.renderCharacters": false, "markdown-pdf.convertOnSave": true,
+    "code-runner.runInTerminal": true,
+    "git.autofetch": true,
+    "markdown-preview-enhanced.chromePath": "/usr/bin/google-chrome",
+    "spellright.addToSystemDictionary": true,
+    "spellright.language": [],
+    "spellright.documentTypes": [
+        "latex",
+        "plaintext"
+    ],
+    "editor.suggest.showColors": false,
+    "editor.suggest.showClasses": true,
+    "editor.suggest.showDeprecated": false,
+    "editor.suggest.showCustomcolors": false,
+    "editor.suggest.showModules": true,
+    "editor.suggest.showOperators": true,
+    "editor.suggest.showReferences": false,
+    "editor.suggest.showStructs": true,
+    "editor.suggest.showValues": true,
+    "editor.suggest.showUnits": false,
+    "editor.suggest.showTypeParameters": true,
+    "editor.suggest.showUsers": false,
+    "editor.suggest.showProperties": true,
+    "editor.suggest.showIssues": false,
+    "editor.suggest.showEvents": false,
+    "editor.suggest.showEnumMembers": false,
+    "editor.suggest.showEnums": false,
+    "editor.suggest.showFields": false,
+    "editor.suggest.showMethods": true,
+    "editor.parameterHints.enabled": false,
+    "editor.suggest.showKeywords": true,
+    "path-intellisense.autoTriggerNextSuggestion": true,
+    "editor.acceptSuggestionOnCommitCharacter": false,
+    "path-intellisense.autoSlashAfterDirectory": true,
+    "editor.suggestOnTriggerCharacters": false,
+    "editor.quickSuggestions": {
+        "comments": "off",
+        "strings": "off",
+        "other": "inline"
+    },
+    "workbench.colorTheme": "Tokyo Night Storm",
+    "workbench.colorCustomizations": {
+        // "Better Solarized Light": {
+        //     "foreground": "#B4BBC8",
+        //     "selection.background": "#5124B3A6",
+        //     "editor.background": "#262A30"
+        // },
+        "editor.selectionBackground": "#88cbff6c", //Currently SELECTED text
+        "editor.selectionHighlightBackground": "#ffae005b", //Same content as selection
+        "editor.findMatchBackground": "#00cc44a8", //Current SEARCH MATCH
+        "editor.findMatchHighlightBackground": "#ff7b00a1", //Other SEARCH MATCHES
+        "editor.lineHighlightBackground": "#ff880013",
+    },
+    "cSpell.language": "en-GB,ru",
+    "cSpell.enableFiletypes": [
+        "markdown"
+    ],
+    "[markdown]": {
+        "files.trimTrailingWhitespace": true
+    },
+    "editor.glyphMargin": false,
+    // "editor.folding": false,
+    "editor.scrollbar.verticalScrollbarSize": 1,
+    "editor.lineHeight": 0,
+    "markdown-preview-enhanced.previewTheme": "github-dark.css",
+    "editor.fontSize": 15,
+    "[python]": {
+        "editor.formatOnType": true,
+        "editor.defaultFormatter": "ms-python.black-formatter"
+    },
+    "python.terminal.executeInFileDir": true,
+    "MATLAB.matlabConnectionTiming": "onDemand",
+    "latex-workshop.bibtex-format.tab": "4 spaces",
+    "latex.linter.enabled": false,
+    "latex-workshop.linting.chktex.enabled": true,
+    "latex-workshop.viewer.pdf.internal.port": 0,
+    "[latex]": {
+        "editor.wordWrap": "on",
+        "editor.defaultFormatter": "James-Yu.latex-workshop"
+    },
+    "workbench.editor.empty.hint": "hidden",
+    "window.zoomLevel": 1.7,
+    "workbench.activityBar.location": "hidden",
+    "python.languageServer": "Pylance",
+    "black-formatter.args": [
+        "--line-length=76"
+    ],
+    "scm.inputFontSize": 15,
+    "markdownlint.config": {
+        "default": true,
+        "MD025": false,
+        "MD010": false,
+        "MD022": false,
+        "MD040": false,
+        "MD031": false,
+        "MD033": false,
+        "MD045": false,
+        "MD012": false,
+        "MD029": false,
+        "MD032": false,
+        "MD007": false,
+        "MD003": false,
+        "MD001": false,
+        "MD041": false,
+    },
+    "markdown.preview.fontSize": 16,
+    "terminal.integrated.defaultProfile.windows": "Command Prompt",
+    "explorer.confirmPasteNative": false,
+    "terminal.integrated.commandsToSkipShell": [
+        "matlab.interrupt"
+    ],
+    "accessibility.signals.lineHasInlineSuggestion": {
+        "sound": "off"
+    },
+    "latex-workshop.latex.autoBuild.run":"never",
+    "latex-workshop.message.badbox.show": false,
+    // "latex-workshop.message.latexlog.exclude": [
+    //     "10",
+    //     "46",
+    // ],
+    "latex-workshop.linting.chktex.exec.args": [
+        "-wall",
+        "-n22",
+        "-n30",
+        "-e16",
+        "-q",
+        "-n10",
+        "-n17",
+        "-n13",
+        "-n3"
+    ],
+    "github.copilot.editor.enableAutoCompletions": true,
+    "cSpell.enabled": false,
+    "editor.tabCompletion": "on",
+    "telemetry.telemetryLevel": "off",
+    "MATLAB.telemetry": false,
+    "code-runner.enableAppInsights": false,
+    "explorer.incrementalNaming": "smart",
+    "notebook.markup.fontSize": 18,
+
+    // === VIM CFG
+    "editor.lineNumbers": "relative",
+
+    "vim.leader": "<space>",
+
+    "vim.easymotion": true,
+    "vim.surround": true,
+
+    "vim.useSystemClipboard": true,
+    "vim.useCtrlKeys": true,
+    // "vim.incsearch": true // Show the next match while entering a search
+    "vim.hlsearch": true, // Highlight search
+
+    "vim.insertModeKeyBindings": [
+        {
+            "before": ["j", "j"],
+            "after": ["<Esc>"]
+        }
+    ],
+    "vim.visualModeKeyBindings": [
+        // drag selected lines
+        {
+            "before": ["J"],
+            "commands": ["editor.action.moveLinesDownAction"]
+        },
+        {
+            "before": ["K"],
+            "commands": ["editor.action.moveLinesUpAction"]
+        },
+        // comment selected lines
+        {
+            "before": ["<leader>", "c"],
+            "commands": [
+                "editor.action.commentLine",
+                "extension.vim_escape"
+            ],
+        },
+        // Bind > and < in visual mode to indent/outdent lines (repeatable):
+        {
+            "before": [ ">" ],
+            "commands": ["editor.action.indentLines"]
+        },
+        {
+            "before": [ "<" ],
+            "commands": ["editor.action.outdentLines"]
+        },
+        // Bind p in visual mode to paste without overriding the current register:
+        {
+            "before": [
+                "p",
+            ],
+            "after": [
+                "p",
+                "g",
+                "v",
+                "y"
+            ]
+        },
+    ],
+        // Bind L to $ and H to ^ in operator pending mode makes yL and dH work like y$ and d^ respectively:
+    "vim.operatorPendingModeKeyBindings": [
+        {
+            "before": ["L"],
+            "after": ["$"]
+        },
+        {
+            "before": ["H"],
+            "after": ["^"]
+        }
+    ],
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": ["<s-u>"],
+            "commands": [":redo"]
+        },
+        {
+            "before": ["<leader>", "d"],
+            "after": ["d", "d"]
+        },
+        {
+            "before": ["<esc>"],
+            "commands": [":nohl"]
+        },
+        {
+            "before": ["K"],
+            "commands": ["lineBreakInsert"],
+            "silent": true
+        },
+        {
+            "before": ["<leader>", ";"],
+            "commands": ["editor.action.startFindReplaceAction"]
+        },
+        {
+            "before": ["g", "h"],
+            "commands": ["editor.action.showDefinitionPreviewHover"]
+        },
+        { "before": ["<leader>", "/"], "commands": ["editor.action.quickFix"] },
+        // files
+        { "before": ["<leader>", "r", "f"], "commands": ["fileutils.renameFile"] },
+        { "before": ["<leader>", "d", "f"], "commands": ["fileutils.removeFile"] },
+        // NAVIGATION
+        // jumping up and down with centetering
+        { "before": ["<c-d>"], "after": ["<c-d>","z","z"] },
+        { "before": ["<c-u>"], "after": ["<c-u>","z","z"] },
+        // search with centering
+        { "before": ["n"], "after": ["n","z","z","z","v"] },
+        { "before": ["n"], "after": ["n","z","z","z","v"] },
+
+
+        // switch b/w buffers
+        { "before": ["<s-h>"], "commands": [":bprevious"] },
+        { "before": ["<s-l>"], "commands": [":bnext"] },
+
+        // splits
+        { "before": ["leader", "v"], "commands": [":vsplit"] },
+        { "before": ["leader", "s"], "commands": [":split"] },
+
+        { "before": ["leader", "p"], "commands": ["editor.action.formatDocument"] },
+        { "before": ["leader", "f"], "commands": ["workbench.action.quickOpen"] },
+        // panes
+        {
+            "before": ["leader", "h"],
+            "commands": ["workbench.action.focusLeftGroup"]
+        },
+        {
+            "before": ["leader", "j"],
+            "commands": ["workbench.action.focusBelowGroup"]
+        },
+        {
+            "before": ["leader", "k"],
+            "commands": ["workbench.action.focusAboveGroup"]
+        },
+        {
+            "before": ["leader", "l"],
+            "commands": ["workbench.action.focusRightGroup"]
+        },
+        // // bookmarks
+        // {
+        //     "before": ["<leader>", "m"],
+        //     "commands": [ "bookmarks.toggle" ]
+        // },
+        // {
+        //     "before": ["<leader>", "b"],
+        //     "commands": [ "bookmarks.list" ]
+        // },
+        // nice to have
+        { "before": ["leader", "w"], "commands": [":wq"] },
+        // { "before": ["leader", "q"], "commands": [":q!"] },
+        {
+            "before": ["[", "d"],
+            "commands": ["editor.action.marker.prev"]
+        },
+        {
+            "before": ["]", "d"],
+            "commands": ["editor.action.marker.next"]
+        },
+        {
+            "before": ["<leader>", "c", "f"],
+            "commands": ["editor.action.quickFix"]
+        },
+    ],
+    // To improve performance
+    "extensions.experimental.affinity": {
+        "vscodevim.vim": 1
+    },
+    "zenMode.hideLineNumbers": false,
+    "workbench.statusBar.visible": false,
+    "editor.suggest.showConstructors": false
+
+}
