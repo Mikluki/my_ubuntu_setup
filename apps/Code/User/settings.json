@@ -35,37 +35,41 @@
     "editor.suggest.showCustomcolors": false,
     "editor.suggest.showModules": true,
     "editor.suggest.showOperators": true,
-    "editor.suggest.showReferences": false,
+    "editor.suggest.showReferences": true,
     "editor.suggest.showStructs": true,
     "editor.suggest.showValues": true,
-    "editor.suggest.showUnits": false,
+    "editor.suggest.showUnits": true,
     "editor.suggest.showTypeParameters": true,
-    "editor.suggest.showUsers": false,
+    "editor.suggest.showUsers": true,
     "editor.suggest.showProperties": true,
     "editor.suggest.showIssues": false,
-    "editor.suggest.showEvents": false,
+    "editor.suggest.showEvents": true,
     "editor.suggest.showEnumMembers": false,
     "editor.suggest.showEnums": false,
-    "editor.suggest.showFields": false,
+    "editor.suggest.showFields": true,
     "editor.suggest.showMethods": true,
-    "editor.parameterHints.enabled": false,
     "editor.suggest.showKeywords": true,
+    "editor.parameterHints.enabled": true,
     "path-intellisense.autoTriggerNextSuggestion": true,
     "editor.acceptSuggestionOnCommitCharacter": false,
     "path-intellisense.autoSlashAfterDirectory": true,
     "editor.suggestOnTriggerCharacters": false,
     "editor.quickSuggestions": {
         "comments": "off",
-        "strings": "off",
-        "other": "inline"
+        "other": "inline",
+        "strings": "inline"
     },
     "workbench.colorTheme": "Tokyo Night Storm",
+
     "workbench.colorCustomizations": {
         // "Better Solarized Light": {
         //     "foreground": "#B4BBC8",
         //     "selection.background": "#5124B3A6",
         //     "editor.background": "#262A30"
         // },
+        "editorLineNumber.foreground": "#999999",
+        "editorLineNumber.activeForeground": "#555555",
+
         "editor.selectionBackground": "#88cbff6c", //Currently SELECTED text
         "editor.selectionHighlightBackground": "#ffae005b", //Same content as selection
         "editor.findMatchBackground": "#00cc44a8", //Current SEARCH MATCH
@@ -128,7 +132,8 @@
     "terminal.integrated.defaultProfile.windows": "Command Prompt",
     "explorer.confirmPasteNative": false,
     "terminal.integrated.commandsToSkipShell": [
-        "matlab.interrupt"
+        "matlab.interrupt",
+        "language-julia.interrupt"
     ],
     "accessibility.signals.lineHasInlineSuggestion": {
         "sound": "off"
@@ -191,10 +196,7 @@
         // comment selected lines
         {
             "before": ["<leader>", "c"],
-            "commands": [
-                "editor.action.commentLine",
-                "extension.vim_escape"
-            ],
+            "commands": [ "editor.action.commentLine", "extension.vim_escape" ],
         },
         // Bind > and < in visual mode to indent/outdent lines (repeatable):
         {
@@ -255,7 +257,10 @@
             "before": ["g", "h"],
             "commands": ["editor.action.showDefinitionPreviewHover"]
         },
-        { "before": ["<leader>", "/"], "commands": ["editor.action.quickFix"] },
+        { "before": ["<leader>", "q"], "commands": ["editor.action.quickFix"] },
+        // { "before": ["<leader>", "c", "f"], "commands": ["editor.action.quickFix"] },
+        { "before": ["<leader>", "g"], "commands": ["editor.action.revealDefinition"] },
+
         // files
         { "before": ["<leader>", "r", "f"], "commands": ["fileutils.renameFile"] },
         { "before": ["<leader>", "d", "f"], "commands": ["fileutils.removeFile"] },
@@ -269,32 +274,19 @@
 
 
         // switch b/w buffers
-        { "before": ["<s-h>"], "commands": [":bprevious"] },
-        { "before": ["<s-l>"], "commands": [":bnext"] },
-
-        // splits
+        { "before": ["leader", "h"], "commands": [":bprevious"] },
+        { "before": ["leader", "l"], "commands": [":bnext"] },
+         // splits
         { "before": ["leader", "v"], "commands": [":vsplit"] },
         { "before": ["leader", "s"], "commands": [":split"] },
 
         { "before": ["leader", "p"], "commands": ["editor.action.formatDocument"] },
         { "before": ["leader", "f"], "commands": ["workbench.action.quickOpen"] },
         // panes
-        {
-            "before": ["leader", "h"],
-            "commands": ["workbench.action.focusLeftGroup"]
-        },
-        {
-            "before": ["leader", "j"],
-            "commands": ["workbench.action.focusBelowGroup"]
-        },
-        {
-            "before": ["leader", "k"],
-            "commands": ["workbench.action.focusAboveGroup"]
-        },
-        {
-            "before": ["leader", "l"],
-            "commands": ["workbench.action.focusRightGroup"]
-        },
+        { "before": ["<s-h>"], "commands": ["workbench.action.focusLeftGroup"] },
+        // { "before": [], "commands": ["workbench.action.focusBelowGroup"] },
+        // { "before": [], "commands": ["workbench.action.focusAboveGroup"] },
+        { "before": ["<s-l>"], "commands": ["workbench.action.focusRightGroup"] },
         // // bookmarks
         // {
         //     "before": ["<leader>", "m"],
@@ -315,10 +307,6 @@
             "before": ["]", "d"],
             "commands": ["editor.action.marker.next"]
         },
-        {
-            "before": ["<leader>", "c", "f"],
-            "commands": ["editor.action.quickFix"]
-        },
     ],
     // To improve performance
     "extensions.experimental.affinity": {
@@ -326,6 +314,17 @@
     },
     "zenMode.hideLineNumbers": false,
     "workbench.statusBar.visible": false,
-    "editor.suggest.showConstructors": false
+    "julia.enableTelemetry": false,
+    "julia.symbolCacheDownload": true,
+    "julia.executablePath": "$HOME/.juliaup/bin/julia",
+    "julia.execution.saveOnEval": true,
+    "julia.persistentSession.shell": "/bin/zsh",
+    "settingsSync.ignoredSettings": [
+        "-julia.executablePath"
+    ],
+    "julia.inlayHints.static.enabled": true,
+    "julia.lint.missingrefs": "symbols",
+    "editor.inlineSuggest.suppressSuggestions": true,
+    "editor.inlineSuggest.enabled": false
 
 }

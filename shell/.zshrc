@@ -131,3 +131,12 @@ alias matlab2023a=/home/mik/MATLAB/R2023a/bin/matlab
 export PATH=$PATH:/home/mik/scripts
 export PATH="$PATH:/opt/nvim-linux64/bin"
 export GIT_EDITOR=nvim
+
+# >>> juliaup initialize >>>
+
+# !! Contents within this block are managed by juliaup !!
+
+path=('/home/mik/.juliaup/bin' $path)
+export PATH
+
+# <<< juliaup initialize <<<

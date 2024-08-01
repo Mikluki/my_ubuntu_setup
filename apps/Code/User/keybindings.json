@@ -266,9 +266,8 @@
         "when": "editorTextFocus"
     },
     {
-        "key": "ctrl+shift+w",
-        "command": "workbench.action.closeActiveEditor",
-        "when": "editorFocus"
+        "key": "ctrl+q",
+        "command": "workbench.action.closeActiveEditor"
     },
     {
         "key": "ctrl+w",
@@ -379,11 +378,29 @@
         "when": "editorLangId == 'markdown'"
     },
     {
-        "key": "ctrl+shift+/",
-        "command": "python.execInTerminal-icon"
-    },
-    {
         "key": "ctrl+shift+j",
         "command": "terminal.focus"
+    },
+    {
+        "key": "ctrl+shift+/",
+        "command": "code-runner.run"
+    },
+    {
+        "key": "ctrl+alt+n",
+        "command": "-code-runner.run"
+    },
+    {
+        "key": "ctrl+q",
+        "command": "-workbench.action.quit"
+    },
+    {
+        "key": "ctrl+enter",
+        "command": "language-julia.executeCodeBlockOrSelection",
+        "when": "editorTextFocus && activeEditor != 'workbench.editor.notebook' && editorLangId == 'julia'"
+    },
+    {
+        "key": "ctrl+enter",
+        "command": "-language-julia.executeCodeBlockOrSelection",
+        "when": "editorTextFocus && activeEditor != 'workbench.editor.notebook' && editorLangId in 'julia.supportedLanguageIds'"
     },
 ]
