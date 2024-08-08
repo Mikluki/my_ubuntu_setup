@@ -121,16 +121,17 @@ source $ZSH/oh-my-zsh.sh
 #Additional path for scripts
 alias py=/usr/bin/python3
 alias python=/usr/bin/python3
-
 alias vi=nvim
-
-
 alias matlab2023a=/home/mik/MATLAB/R2023a/bin/matlab
 # export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/mik/MATLAB/R2023a/bin/glnxa64
 # export PATH=$PATH:/home/mik/apps/MATLAB/r2023a/bin/glnxa64
 export PATH=$PATH:/home/mik/scripts
 export PATH="$PATH:/opt/nvim-linux64/bin"
 export GIT_EDITOR=nvim
+export VISUAL=nvim;
+export EDITOR=nvim;
+
+
 
 # >>> juliaup initialize >>>
 
@@ -140,3 +141,5 @@ path=('/home/mik/.juliaup/bin' $path)
 export PATH
 
 # <<< juliaup initialize <<<
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

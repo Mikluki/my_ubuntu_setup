@@ -13,15 +13,20 @@
   new_tab = <Primary>t
   cycle_next = ""
   cycle_prev = ""
+  go_up = <Super>k
+  go_down = <Super>j
+  go_left = <Super>h
+  go_right = <Super>l
   split_horiz = <Alt>2
   split_vert = <Alt>1
-  close_term = <Alt>4
+  close_term = <Alt>3
   copy = <Primary><Shift>c
   paste = <Primary><Shift>v
   close_window = <Primary><Shift>q
   next_tab = <Alt>w
   prev_tab = <Alt>q
   edit_window_title = <Primary><Alt>e
+  layout_launcher = ""
 [profiles]
   [[default]]
     background_color = "#2c2c2c"

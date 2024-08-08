@@ -17,8 +17,8 @@ echo "# copying terminator cfg"
 cp -r $HOME/.config/terminator ./apps
 
 # sublime
-echo "# copying sublime cfg"
-cp -r $HOME/.config/sublime-text/Packages/ ./apps/sublime/User
+# echo "# copying sublime cfg"
+# cp -r $HOME/.config/sublime-text/Packages/ ./apps/sublime/User
 
 # cmus player
 echo "# copying cmus cfg"

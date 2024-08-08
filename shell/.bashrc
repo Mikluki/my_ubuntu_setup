@@ -117,13 +117,18 @@ if ! shopt -oq posix; then
 fi
 
 alias vi=nvim
-#Additional path for scripts
 alias matlab2023a=/home/mik/MATLAB/R2023a/bin/matlab
+#Additional path for scripts
 # export PATH=$PATH:/home/mik/apps/MATLAB/r2023a/bin
 # export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/mik/apps/MATLAB/r2023a/bin/glnxa64
 export PATH=$PATH:/home/mik/scripts
 export PATH="$PATH:/opt/nvim-linux64/bin"
 export GIT_EDITOR=nvim
+
+export VISUAL=nvim;
+export EDITOR=nvim;
+
+
 
 # >>> juliaup initialize >>>
 
@@ -139,3 +144,5 @@ case ":$PATH:" in
 esac
 
 # <<< juliaup initialize <<<
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash

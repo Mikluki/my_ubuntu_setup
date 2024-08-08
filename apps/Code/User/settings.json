@@ -67,8 +67,8 @@
         //     "selection.background": "#5124B3A6",
         //     "editor.background": "#262A30"
         // },
-        "editorLineNumber.foreground": "#999999",
-        "editorLineNumber.activeForeground": "#555555",
+        "editorLineNumber.foreground": "#66739F",
+        "editorLineNumber.activeForeground": "#988AEB",
 
         "editor.selectionBackground": "#88cbff6c", //Currently SELECTED text
         "editor.selectionHighlightBackground": "#ffae005b", //Same content as selection
@@ -223,11 +223,11 @@
         // Bind L to $ and H to ^ in operator pending mode makes yL and dH work like y$ and d^ respectively:
     "vim.operatorPendingModeKeyBindings": [
         {
-            "before": ["L"],
+            "before": ["l"],
             "after": ["$"]
         },
         {
-            "before": ["H"],
+            "before": ["h"],
             "after": ["^"]
         }
     ],
@@ -235,6 +235,10 @@
         {
             "before": ["<s-u>"],
             "commands": [":redo"]
+        },
+        {
+            "before": ["<leader>", "c"],
+            "commands": [ "editor.action.commentLine"],
         },
         {
             "before": ["<leader>", "d"],
@@ -283,19 +287,19 @@
         { "before": ["leader", "p"], "commands": ["editor.action.formatDocument"] },
         { "before": ["leader", "f"], "commands": ["workbench.action.quickOpen"] },
         // panes
-        { "before": ["<s-h>"], "commands": ["workbench.action.focusLeftGroup"] },
+        // { "before": [], "commands": ["workbench.action.focusLeftGroup"] },
         // { "before": [], "commands": ["workbench.action.focusBelowGroup"] },
         // { "before": [], "commands": ["workbench.action.focusAboveGroup"] },
-        { "before": ["<s-l>"], "commands": ["workbench.action.focusRightGroup"] },
+        // { "before": [], "commands": ["workbench.action.focusRightGroup"] },
         // // bookmarks
-        // {
-        //     "before": ["<leader>", "m"],
-        //     "commands": [ "bookmarks.toggle" ]
-        // },
-        // {
-        //     "before": ["<leader>", "b"],
-        //     "commands": [ "bookmarks.list" ]
-        // },
+        {
+            "before": ["<leader>", "m"],
+            "commands": [ "bookmarks.toggle" ]
+        },
+        {
+            "before": ["<leader>", "b"],
+            "commands": [ "bookmarks.list" ]
+        },
         // nice to have
         { "before": ["leader", "w"], "commands": [":wq"] },
         // { "before": ["leader", "q"], "commands": [":q!"] },
@@ -322,9 +326,9 @@
     "settingsSync.ignoredSettings": [
         "-julia.executablePath"
     ],
-    "julia.inlayHints.static.enabled": true,
     "julia.lint.missingrefs": "symbols",
     "editor.inlineSuggest.suppressSuggestions": true,
-    "editor.inlineSuggest.enabled": false
+    "julia.inlayHints.static.variableTypes.enabled": false,
+    "terminal.external.linuxExec": "/home/mik/.local/bin/kitty"
 
 }
